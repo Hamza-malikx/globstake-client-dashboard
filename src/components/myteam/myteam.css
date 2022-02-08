@@ -1,0 +1,41 @@
+.actbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.actbtn button {
+  border-radius: 5px;
+  padding: 1px 3px;
+  margin: 0 3px;
+  font-size: 13px;
+  line-height: 16px;
+  border: unset;
+}
+
+.actbtn button:focus {
+  outline: unset;
+}
+
+@media (max-width: 390px) {
+  .actbtn button {
+    padding: 1px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .actbtn {
+    justify-content: center;
+  }
+}
+.btn1-success {
+  color: #fff;
+  background: #30c102 !important;
+  border-color: #19d610;
+}
+.btn1-success:active,
+.btn1-success:focus {
+  outline: none !important;
+}
+.btn1-success:hover {
+  outline: 2px solid #19d610 !important;
+}

@@ -1,0 +1,492 @@
+import React from "react";
+import "../../css/main.css";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
+import Navbar from "../navbar/Navbar";
+const DailyRoi = () => {
+  return (
+    <div>
+      {" "}
+      <div className="page">
+        <div className="page-main">
+          {/* <!-- app-content--> */}
+          <div className="app-content">
+            {/* <!-- HEADER --> */}
+            <Header />
+            {/* <!-- HEADER END --> <!--Resposnisve Navbar--> */}
+            <div className="mb-1 navbar navbar-expand-lg  responsive-navbar navbar-dark d-sm-none">
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent-4"
+              >
+                <div className="d-flex order-lg-2 ml-auto">
+                  <div className="dropdown text-center selector profile-1 mt-4">
+                    <a href="logout.html" className="nav-link leading-none d-flex">
+                      <span>
+                        <img
+                          src="assets/images/logout_icon.png"
+                          className="avatar brround cover-image mb-1 ml-0"
+                        />
+                      </span>
+                    </a>
+                  </div>
+                  {/* <!-- PROFILE --> */}
+                </div>
+              </div>
+            </div>
+            {/* <!--/Resposnisve Navbar--> <!-- HORIZONTAL-MENU --> */}
+            <div
+              id="sticky-wrapper"
+              className="sticky-wrapper"
+              style={{ height: "57px" }}
+            >
+              <Navbar />
+            </div>
+          </div>
+        </div>
+        {/* <!--------start dashboard---------------> */}
+        <div className="side-app container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+              <div className="card shadow">
+                <div className="card-header bg-transparent">
+                  <h4 className="card-title mb-0">DSP </h4>
+                </div>
+
+                <div className="card-body p-0">
+                  <div className="grid-margin">
+                    <div className="">
+                      <div className="table-responsive">
+                        <table className="table card-table border table-vcenter text-nowrap align-items-center">
+                          <thead className="thead-light">
+                            <tr>
+                              <th>S.No</th>
+                              <th>ID</th>
+
+                              <th>Token </th>
+                              <th>Amount(USD)</th>
+                              <th>Date</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>112233</td>
+                              <td>0.208093284476</td>
+                              <td>1</td>
+                              <td>27/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>112233</td>
+                              <td>0.455935101807</td>
+                              <td>1</td>
+                              <td>26/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>112233</td>
+                              <td>0.655403228252</td>
+                              <td>1</td>
+                              <td>25/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>112233</td>
+                              <td>0.853781393748</td>
+                              <td>1</td>
+                              <td>24/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>112233</td>
+                              <td>1.06345241354</td>
+                              <td>1</td>
+                              <td>23/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>112233</td>
+                              <td>0.90750303511</td>
+                              <td>1</td>
+                              <td>22/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>112233</td>
+                              <td>0.846416717124</td>
+                              <td>1</td>
+                              <td>21/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>112233</td>
+                              <td>0.902474286788</td>
+                              <td>1</td>
+                              <td>20/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>112233</td>
+                              <td>0.959098165196</td>
+                              <td>1</td>
+                              <td>19/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td>112233</td>
+                              <td>0.951617152808</td>
+                              <td>1</td>
+                              <td>18/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td>112233</td>
+                              <td>0.988393618744</td>
+                              <td>1</td>
+                              <td>17/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td>112233</td>
+                              <td>1.063177865565</td>
+                              <td>1</td>
+                              <td>16/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
+                              <td>112233</td>
+                              <td>1.608057924585</td>
+                              <td>1</td>
+                              <td>15/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>14</td>
+                              <td>112233</td>
+                              <td>2.225193346341</td>
+                              <td>1</td>
+                              <td>14/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>15</td>
+                              <td>112233</td>
+                              <td>2.203211036438</td>
+                              <td>1</td>
+                              <td>13/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>16</td>
+                              <td>112233</td>
+                              <td>2.363362826008</td>
+                              <td>1</td>
+                              <td>12/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td>112233</td>
+                              <td>2.331961730566</td>
+                              <td>1</td>
+                              <td>11/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>18</td>
+                              <td>112233</td>
+                              <td>2.12490269769</td>
+                              <td>1</td>
+                              <td>10/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>19</td>
+                              <td>112233</td>
+                              <td>2.16376119736</td>
+                              <td>1</td>
+                              <td>09/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>20</td>
+                              <td>112233</td>
+                              <td>2.127603606678</td>
+                              <td>1</td>
+                              <td>08/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>21</td>
+                              <td>112233</td>
+                              <td>1.974510648064</td>
+                              <td>1</td>
+                              <td>07/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>22</td>
+                              <td>112233</td>
+                              <td>1.739175015105</td>
+                              <td>1</td>
+                              <td>06/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>23</td>
+                              <td>112233</td>
+                              <td>1.725620441949</td>
+                              <td>1</td>
+                              <td>05/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>24</td>
+                              <td>112233</td>
+                              <td>2.049381047841</td>
+                              <td>1</td>
+                              <td>04/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>25</td>
+                              <td>112233</td>
+                              <td>1.995470245174</td>
+                              <td>1</td>
+                              <td>03/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>26</td>
+                              <td>112233</td>
+                              <td>2.09209885164</td>
+                              <td>1</td>
+                              <td>02/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>27</td>
+                              <td>112233</td>
+                              <td>2.40164944839</td>
+                              <td>1</td>
+                              <td>01/01/2022</td>
+                            </tr>
+                            <tr>
+                              <td>28</td>
+                              <td>112233</td>
+                              <td>2.32203360049</td>
+                              <td>1</td>
+                              <td>31/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>29</td>
+                              <td>112233</td>
+                              <td>2.10471744195</td>
+                              <td>1</td>
+                              <td>30/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>30</td>
+                              <td>112233</td>
+                              <td>2.047935501808</td>
+                              <td>1</td>
+                              <td>29/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>31</td>
+                              <td>112233</td>
+                              <td>1.93236250332</td>
+                              <td>1</td>
+                              <td>28/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>32</td>
+                              <td>112233</td>
+                              <td>1.87123605978</td>
+                              <td>1</td>
+                              <td>27/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>33</td>
+                              <td>112233</td>
+                              <td>1.5726596886</td>
+                              <td>1</td>
+                              <td>26/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>34</td>
+                              <td>112233</td>
+                              <td>1.5444285483</td>
+                              <td>1</td>
+                              <td>25/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>35</td>
+                              <td>112233</td>
+                              <td>1.519730552475</td>
+                              <td>1</td>
+                              <td>24/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>36</td>
+                              <td>112233</td>
+                              <td>1.511369551902</td>
+                              <td>1</td>
+                              <td>23/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>37</td>
+                              <td>112233</td>
+                              <td>1.521730473068</td>
+                              <td>1</td>
+                              <td>22/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>38</td>
+                              <td>112233</td>
+                              <td>1.54505076908</td>
+                              <td>1</td>
+                              <td>21/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>39</td>
+                              <td>112233</td>
+                              <td>1.468317956862</td>
+                              <td>1</td>
+                              <td>20/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>40</td>
+                              <td>112233</td>
+                              <td>1.421566921464</td>
+                              <td>1</td>
+                              <td>19/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>41</td>
+                              <td>112233</td>
+                              <td>1.43388225484</td>
+                              <td>1</td>
+                              <td>18/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>42</td>
+                              <td>112233</td>
+                              <td>1.339774017777</td>
+                              <td>1</td>
+                              <td>17/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>43</td>
+                              <td>112233</td>
+                              <td>1.3345098208</td>
+                              <td>1</td>
+                              <td>16/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>44</td>
+                              <td>112233</td>
+                              <td>1.342126678713</td>
+                              <td>1</td>
+                              <td>15/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>45</td>
+                              <td>112233</td>
+                              <td>1.248491972016</td>
+                              <td>1</td>
+                              <td>14/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>46</td>
+                              <td>112233</td>
+                              <td>1.161238028559</td>
+                              <td>1</td>
+                              <td>13/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>47</td>
+                              <td>112233</td>
+                              <td>1.023525563994</td>
+                              <td>1</td>
+                              <td>12/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>48</td>
+                              <td>112233</td>
+                              <td>1.04082681853</td>
+                              <td>1</td>
+                              <td>11/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>49</td>
+                              <td>112233</td>
+                              <td>1.010752365936</td>
+                              <td>1</td>
+                              <td>10/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>50</td>
+                              <td>112233</td>
+                              <td>0.97353813083</td>
+                              <td>1</td>
+                              <td>09/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>51</td>
+                              <td>112233</td>
+                              <td>0.996948109888</td>
+                              <td>1</td>
+                              <td>08/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>52</td>
+                              <td>112233</td>
+                              <td>1.037002030427</td>
+                              <td>1</td>
+                              <td>07/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>53</td>
+                              <td>112233</td>
+                              <td>0.997133756544</td>
+                              <td>1</td>
+                              <td>06/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>54</td>
+                              <td>112233</td>
+                              <td>0.977278508304</td>
+                              <td>1</td>
+                              <td>05/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>55</td>
+                              <td>112233</td>
+                              <td>0.880437201801</td>
+                              <td>1</td>
+                              <td>04/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>56</td>
+                              <td>112233</td>
+                              <td>0.9251469108</td>
+                              <td>1</td>
+                              <td>03/12/2021</td>
+                            </tr>
+                            <tr>
+                              <td>57</td>
+                              <td>112233</td>
+                              <td>0.89858447452</td>
+                              <td>1</td>
+                              <td>02/12/2021</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      {/* <!---pagination start--> */}
+                      <div className="pagination-wrapper">
+                        <div className="pagination-box"></div>
+                      </div>
+                      {/* <!---pagination end--> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default DailyRoi;

@@ -1,0 +1,106 @@
+.horizontalMenu {
+  border-radius: 0;
+  color: #fff;
+  padding: 0;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 5px;
+  position: fixed;
+  width: 100%;
+  top: 70px;
+  background-color: #03256c !important;
+  z-index: 10000000;
+}
+.linksOnDrop {
+  color: #94a3be;
+  width: 100%;
+  padding: 10px 0;
+  transition: all 0.5s;
+}
+/* .fa {
+  margin-right: 5px;
+  margin-left: 5px;
+} */
+.dropdown-item {
+  padding: 0.5rem 1rem 0.5rem 0.6rem !important;
+}
+.btn-success {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #ffffff80 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.dropdown {
+  position: relative !important;
+}
+.dropdown-menu {
+  min-width: 12rem !important;
+  position: absolute !important;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.dropdown-menu.show {
+  /* transform: translate3d(-22px, 104px, 0px) !important; */
+}
+.linksOnDrop:hover {
+  color: rgba(0, 0, 0, 100%);
+  padding: 10px 0 10px 10px;
+  transition: all 0.5s;
+}
+.horizontalMenu-list {
+  display: flex;
+}
+.horizontalMenu-list li:nth-child(1) {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.horizontalMenu-list li {
+  background-color: #03256c !important;
+  padding: 16px 11.2px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.horizontalMenu:before,
+.horizontalMenu:after {
+  content: "";
+  display: table;
+}
+.sticky-wrapper {
+  height: 56px !important;
+}
+.horizontal-body .horizontal-main {
+  margin-top: 76px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+@media only screen and (max-width: 991px) {
+  .horizontal-main {
+    height: 0;
+    padding: 0;
+    display: none;
+  }
+}
+.dropdown-toggle:after {
+  display: none !important;
+}
+.dropdown-menu.show {
+  /* transform: none !important; */
+  transform: translate3d(-22px, 104px, 0px) !important;
+  /* top: 0px !important; */
+  /* bottom: -104px !important;
+  left: -21px; */
+}
+.horizontalMenu-list li:nth-child(4) div div {
+  transform: translate3d(-22px, 42px, 0px) !important;
+}
+.horizontalMenu-list li:nth-child(5) div div {
+  transform: translate3d(-22px, 42px, 0px) !important;
+}
+.dropdown .dropdown-menu.show:nth-child(1) {
+  background-color: green;
+}

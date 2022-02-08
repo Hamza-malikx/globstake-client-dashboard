@@ -1,0 +1,12 @@
+.btn1-success {
+  color: #fff;
+  background: #30c102 !important;
+  border-color: #19d610;
+}
+.btn1-success:active,
+.btn1-success:focus {
+  outline: none !important;
+}
+.btn1-success:hover {
+  outline: none !important;
+}

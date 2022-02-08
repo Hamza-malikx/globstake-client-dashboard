@@ -1,38 +1,284 @@
-.App {
+.header {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: fixed !important;
+  background-color: #03256c;
+}
+.header-fixed {
+  position: fixed;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.hamburg {
+  position: relative;
+  top: 20px;
+  margin-right: 10px;
+  display: none;
+}
+.horizontal-body .side-app {
+  margin-top: 90px;
+}
+.side-app {
+  margin-top: 90px;
+}
+@media screen and (max-width: 991px) {
+  .hamburg {
+    display: block;
+  }
+  .sidebar,
+  .sidebar-ss {
+    display: block !important;
+  }
+  .side-app {
+    margin-top: 20px;
+  }
+}
+
+.top-bar {
+  cursor: pointer;
+  height: 2px;
+  width: 23px;
+  background: #fff;
+  position: relative;
+  display: block;
+  content: "";
+  top: -6px;
+  transition: all 500ms ease-in-out;
+}
+.top-bar-ss {
+  cursor: pointer;
+  height: 2px;
+  width: 23px;
+  background: #fff;
+  position: relative;
+  display: block;
+  content: "";
+  top: 1px;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: all 500ms ease-in-out;
+}
+.mid-bar {
+  cursor: pointer;
+  height: 2px;
+  width: 17px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 500ms ease-in-out;
+}
+.mid-bar-ss {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.bottom-bar {
+  cursor: pointer;
+  height: 2px;
+  width: 17px;
+  background: #fff;
+  position: relative;
+  display: block;
+  content: "";
+  bottom: -7px;
+  transition: all 500ms ease-in-out;
+}
+.bottom-bar-ss {
+  cursor: pointer;
+  height: 2px;
+  width: 23px;
+  background: #fff;
+  position: relative;
+  display: block;
+  content: "";
+  bottom: 1px;
+  transition: all 500ms ease-in-out;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.sidebar {
+  width: 239px;
+  background-color: #00040b;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  width: 239px;
+  /* background: linear-gradient(
+    -360deg,
+    rgb(0, 0, 0, 0.9) 0%,
+    rgb(0, 0, 0, 0.9) 100%
+  ); */
+  padding-bottom: 0;
+  margin-left: -240px;
+  display: block;
   text-align: center;
+  box-shadow: 0 8px 20px 0 rgb(40 37 89 / 10%) !important;
+  position: fixed;
+  z-index: 1000;
+  transition: all 500ms ease-in-out;
+  display: none;
+  top: 55px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar-ss {
+  width: 239px;
+  background-color: #00040b;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  width: 239px;
+  /* background: linear-gradient(
+    -360deg,
+    rgb(0, 0, 0, 0.9) 0%,
+    rgb(0, 0, 0, 0.9) 100%
+  ); */
+  padding-bottom: 0;
+  margin-left: 0px;
+  display: block;
+  box-shadow: 0 8px 20px 0 rgb(40 37 89 / 10%) !important;
+  position: fixed;
+  z-index: 1000;
+  transition: all 500ms ease-in-out;
+  display: none;
+  top: 55px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.sidebarWrapper {
+  /* position: relative; */
+}
+@media only screen and (max-width: 991px) {
+  .page-header {
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline !important;
+    padding: 20px !important;
+  }
+  .breadcrumb {
+    padding: 0px !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.breadcrumb {
+  padding: 4px !important;
 }
-
-.App-link {
-  color: #61dafb;
+.ion-arrow-graph-up-right::before {
+  content: "";
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ssst {
+  display: inline-block;
+  float: right;
+  transform: rotate(90deg);
+}
+.dropHeader {
+  display: none;
+}
+.lgimg {
+  width: 20px;
+  height: 25px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 576px) {
+  .dropHeader {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    background: #03256c;
+    top: 55px;
+    z-index: 1000;
+    transition: all 0.5s;
+    border-bottom: 1px solid rgba(107, 122, 144, 0.3);
+    padding: 3px;
   }
-  to {
-    transform: rotate(360deg);
+  .dropHeaderab {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    background: #03256c;
+    top: 0px;
+    z-index: 100;
+    transition: all 0.5s;
   }
+}
+.sideBarWrapperInner {
+  /* margin-top: 55px; */
+}
+.dhb {
+  font-size: 14px;
+  text-align: left;
+  border-right: solid 0px;
+  color: #fff;
+  line-height: 25px;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  padding: 0.7rem 1.2rem 0.7rem;
+  width: 100%;
+  display: block;
+  float: none;
+  border-right: none;
+  background-color: transparent;
+  position: relative;
+}
+.dhb:hover {
+  background-color: #33363b;
+}
+.wtd {
+  color: #a343ff !important;
+  font-size: 14px;
+  text-align: left;
+  border-right: solid 0px;
+  line-height: 25px;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 0.7rem 1.2rem 0.7rem;
+  cursor: pointer;
+}
+.wtd:hover {
+  background-color: #33363b;
+}
+.dddrop {
+  line-height: 20px;
+  font-size: 13px;
+  padding: 10px 0px 10px 16px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
+}
+.dddrop:hover {
+  transform: translateX(10px);
+  transition: all 0.5s;
+}
+.dddrop:hover a {
+  color: #a343ff !important;
+}
+.dd-open {
+  position: relative;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 0px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 5.7s;
+}
+.dd-close {
+  display: none;
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  transition: inherit;
+  -webkit-transform-style: flat;
+  transition: all 5.7s;
 }

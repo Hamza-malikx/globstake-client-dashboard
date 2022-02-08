@@ -1,0 +1,81 @@
+.page {
+  background-color: #03256c;
+}
+.tviconset {
+}
+
+.tviconset a {
+  display: flex;
+}
+
+.tviconset a span {
+  display: flex;
+  padding-right: 2px;
+}
+
+.tviconset a span img {
+  height: 17px;
+  padding: 0 1px;
+}
+a {
+  text-decoration: none !important;
+}
+
+#app {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  font: 16px "Mukta Vaani", Sans-Serif;
+  text-align: center;
+}
+
+#app .preload-title {
+  padding: 0 0 0 20px;
+  margin-top: -5px;
+  color: #848490;
+}
+
+@media (max-width: 396px) {
+  .mob-navset {
+    position: relative;
+    right: 12rem;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .wdg-actions {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* position: relative; */
+    /* top: 70px; */
+    /*width: 100%;*/
+    /* left: -9px; */
+    border-radius: 10px;
+    background-color: #909090;
+    padding: 8px 9px 6px 19px;
+  }
+
+  .trxnumber input {
+    padding: 11px;
+    width: 50%;
+    border: unset;
+    border-radius: 7px;
+    color: white;
+    background: #1c3567;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+.text_color {
+  color: #fff;
+
+  font-size: 18px;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: lightblue;
+}
+
+#myBar {
+  width: 1%;
+  height: 20px;
+}
